@@ -1,0 +1,15 @@
+/* a has only P tag association-> this means only Paragraphs can use this class! */
+p.a{
+	color: blue
+}
+
+
+/* .b has no tag- this means ANY element can use this class */
+.b {
+	color: red
+}
+
+
+.c {
+	margin-left: 100px 
+} 
