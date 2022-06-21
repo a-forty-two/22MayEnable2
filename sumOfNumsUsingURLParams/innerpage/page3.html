@@ -1,0 +1,24 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+<p id="output"></p>
+Welcome to page 3!
+<script>
+
+var my_url_params = window.location.search;
+//alert(my_url_params);
+nums = my_url_params.split('&');
+
+
+n1 = parseInt(nums[0].split('=')[1]);
+n2 = parseInt(nums[1].split('=')[1]);
+//alert(n1+n2);
+
+document.getElementById('output').innerText = n1+n2;
+</script>
+</body>
+</html>
