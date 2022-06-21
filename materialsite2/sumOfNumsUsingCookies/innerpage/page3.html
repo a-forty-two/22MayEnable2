@@ -1,0 +1,22 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+<p id="output"></p>
+Welcome to page 3!
+<script>
+var mycookie = decodeURIComponent(document.cookie);
+//alert(mycookie);
+myvals = mycookie.split(';')
+nums = myvals[0].split(':');
+n1 = parseInt(nums[0].split('=')[1]);
+n2 = parseInt(nums[1].split('=')[1]);
+//alert(n1+n2);
+
+document.getElementById('output').innerText = n1+n2;
+</script>
+</body>
+</html>
